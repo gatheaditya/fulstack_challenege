@@ -2,10 +2,11 @@ package controller;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
-public class gameModel {
-	
+@Table(name="game")
+public class gameModel {	
 	@Id
 	private int game_id;
 	private String title;
