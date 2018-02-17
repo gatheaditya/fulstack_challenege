@@ -30,16 +30,7 @@ public class gameController {
 //		cr.save(cm);
 //		return "added";
 //	}
-//	@GetMapping(path="/add/{uname}/{pwd}")	
-//	public @ResponseBody String  add(@PathVariable("uname") String uname,@PathVariable("pwd") String pwd )
-//	{
-//		
-//		gameModel cm = new gameModel();		
-//		cm.setUsername(uname);
-//		cm.setPassword(pwd);
-//		cr.save(cm);
-//		return "add";
-//	}
+
 	@GetMapping(path="/all")
 	
 	public @ResponseBody Iterable<gameModel> fetch()
