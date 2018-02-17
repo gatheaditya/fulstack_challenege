@@ -2,7 +2,6 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>hacerearth</groupId>
   <artifactId>challenge</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <name>microservice</name>
 	<description> project for hacker earth</description>
 
@@ -102,5 +101,6 @@
     </pluginRepositories>
 
 
+    <version>0.1</version>
 </project>
   
