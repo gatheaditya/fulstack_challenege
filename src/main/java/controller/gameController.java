@@ -42,7 +42,7 @@ public class gameController {
 	@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 	public @ResponseBody Page<gameModel> fetch(@PathVariable("pageid") int pageid)
 	{
-		return cr.findAll(new PageRequest(pageid,10,Direction.ASC,"title"));
+		return cr.findAll(new PageRequest(pageid,10));
 		
 	}
 	
