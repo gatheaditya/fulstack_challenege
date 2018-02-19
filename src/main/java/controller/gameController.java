@@ -33,7 +33,7 @@ public class gameController {
 	
 
 	@GetMapping(path="/all")
-	@CrossOrigin(origins = "https://gatheaditya.github.io", maxAge = 3600)
+	@CrossOrigin(origins = "https://gatheaditya.github.io,http://localhost:4200", maxAge = 3600)
 	public @ResponseBody Iterable<gameModel> fetchall()
 	{
 		return cr.findAll();
