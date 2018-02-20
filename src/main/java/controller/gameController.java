@@ -45,7 +45,13 @@ public class gameController {
 		return cr.findAll(new PageRequest(pageid,10));
 		
 	}
-	
+	@GetMapping(path="/get/{pageid}")
+	@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
+	public @ResponseBody Page<gameModel> get(@PathVariable("pageid") int pageid)
+	{
+		return cr.findAll(new PageRequest(pageid,10));
+		
+	}
 //	@GetMapping(path="/platforms")
 //	@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
 //	public @ResponseBody List<gameModel> Platforms()
