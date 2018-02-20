@@ -33,13 +33,13 @@ public class gameController {
 	
 
 	@GetMapping(path="/all")
-	@CrossOrigin(origins = "https://gatheaditya.github.io,http://localhost:4200", maxAge = 3600)
+	@CrossOrigin(origins = "https://gatheaditya.github.io", maxAge = 3600)
 	public @ResponseBody Iterable<gameModel> fetchall()
 	{
 		return cr.findAll();
 		}
 	@GetMapping(path="/all/{pageid}")
-	@CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
+	@CrossOrigin(origins = "https://gatheaditya.github.io", maxAge = 3600)
 	public @ResponseBody Page<gameModel> fetch(@PathVariable("pageid") int pageid)
 	{
 		return cr.findAll(new PageRequest(pageid,10));
