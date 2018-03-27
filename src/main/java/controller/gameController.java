@@ -28,7 +28,7 @@ public class gameController {
 	@GetMapping(path="/")	
 	public@ResponseBody String greeting()
 	{
-		return "Welcome to gamecontroller  ";
+		return "Welcome to game  ";
 	}
 	
 
